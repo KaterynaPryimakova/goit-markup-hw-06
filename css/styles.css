@@ -181,7 +181,10 @@ input {
 
 /**-----------------mobile-menu-----------*/
 .mobile-menu-container{
+    width: 428px;
+    margin: 0 auto;
     position: relative;
+    padding: 80px 35px 40px 40px;
 }
 .menu-toggle{
     position: absolute;
@@ -196,9 +199,33 @@ input {
     background-color: transparent;
     color: var(--dark-brand-color);
     border: 1px solid var(--acent-light-color);
-
-
-
+    cursor: pointer;
+}
+.menu-toggle:is(:hover, :focus){
+    color: var(--white);
+    background-color: var(--active-color);
+}
+.mobile-navigation{
+    margin-bottom: 284px;
+}
+.mob-nav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.mob-nav-link{
+    color: var(--dark-brand-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.mob-nav-link:is(:hover, :focus){
+    color: var(--active-color);
+}
+.mob-nav-link.current{
+    color: var(--active-color);
 }
 
 /**------------ Main Studio-----------*/
