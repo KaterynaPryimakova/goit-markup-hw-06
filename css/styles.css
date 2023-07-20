@@ -377,13 +377,14 @@ only screen and (min-resolution: 2dppx) {
 }
 
 .values-icon-wrap{
-    display: flex;
+    display: none;
+    /* display: flex;
     background-color: var(--light-brand-color);
     justify-content: center;
     align-items: center;
     height: 112px;
     margin-bottom: 8px;
-    border-radius: 4px;
+    border-radius: 4px; */
 }
 
 .sub-title {
