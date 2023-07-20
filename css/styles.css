@@ -43,6 +43,9 @@ button {
 input {
     font-family: inherit;
 }
+svg{
+    fill: currentColor;
+}
 /* .visually-hidden {
     position: absolute;
     width: 1px;
@@ -123,9 +126,7 @@ input {
     color: var(--dark-brand-color);
 
 }
-.header-menu-icon{
-    fill: currentColor;
-}
+
 /* desctop-header styles 5hw */
 .nav-menu {
     display: flex;
@@ -182,6 +183,7 @@ input {
 /**-----------------mobile-menu-----------*/
 .mobile-menu-container{
     width: 428px;
+    height: 796px;
     margin: 0 auto;
     position: relative;
     padding: 80px 35px 40px 40px;
@@ -200,6 +202,7 @@ input {
     color: var(--dark-brand-color);
     border: 1px solid var(--acent-light-color);
     cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-toggle:is(:hover, :focus){
     color: var(--white);
@@ -220,12 +223,64 @@ input {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mob-nav-link:is(:hover, :focus){
     color: var(--active-color);
 }
 .mob-nav-link.current{
     color: var(--active-color);
+}
+.mob-contacts{
+    margin-bottom: 48px;
+}
+.mob-contacts-list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.mob-link-tel{
+    color: var(--acent-brand-color);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11;    
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.mob-link-email{
+    color: var(--text-color);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.002em;
+}
+.mob-link-email:is(:hover, :focus){
+    color: var(--active-color);
+}
+.mob-social-list{
+    display: flex;
+    gap: 56px;
+}
+.mob-social-item{
+    width: 40px;
+    height: 40px;
+}
+.mob-social-link{
+    width: 100%;
+    height: 100%;
+    background-color: var(--acent-brand-color);
+    color: var(--light-brand-color);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-social-link:is(:hover, :focus) {
+    background-color: var(--active-color);
 }
 
 /**------------ Main Studio-----------*/
