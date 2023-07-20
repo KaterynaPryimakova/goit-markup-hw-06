@@ -126,7 +126,7 @@ input {
 .header-menu-icon{
     fill: currentColor;
 }
-
+/* desctop-header styles 5hw */
 .nav-menu {
     display: flex;
     gap: 40px;
@@ -177,6 +177,28 @@ input {
 .contacts-link:hover,
 .contacts-link:focus {
     color: var(--active-color);
+}
+
+/**-----------------mobile-menu-----------*/
+.mobile-menu-container{
+    position: relative;
+}
+.menu-toggle{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--dark-brand-color);
+    border: 1px solid var(--acent-light-color);
+
+
+
 }
 
 /**------------ Main Studio-----------*/
