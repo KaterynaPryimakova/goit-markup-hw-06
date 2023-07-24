@@ -474,7 +474,7 @@ only screen and (min-resolution: 2dppx) {
 }
 .values-list{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 72px;
 }
 .values-icon-wrap{
@@ -512,7 +512,6 @@ only screen and (min-resolution: 2dppx) {
     .values-list{
         width: 100%;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         gap: 24px;
         justify-content: space-around;
@@ -521,9 +520,6 @@ only screen and (min-resolution: 2dppx) {
         width: calc(50% - 24px);
     }
     .values-title{
-        text-align: start;
-    }
-    .values-text{
         text-align: start;
     }
 }
