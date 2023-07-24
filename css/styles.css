@@ -714,11 +714,11 @@ only screen and (min-resolution: 2dppx) {
 }
 .customers-list{
     display: flex;
+    flex-wrap: wrap;
     gap: 72px 16px;
-    justify-content: center;
 }
 .customers-item{
-    width: calc((100% - 5*24px) / 6);
+    width: calc((100% - 24px) / 2);
     height: 88px;
 }
 .customers-link{
@@ -742,7 +742,9 @@ only screen and (min-resolution: 2dppx) {
 }
 
 @media screen and (min-width:768px){
-
+    .customers-item{
+        width: calc((100% - 48px) / 3);
+    }
 }
 
 @media screen and (min-width:1158px){
