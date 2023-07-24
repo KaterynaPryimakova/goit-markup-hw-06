@@ -577,27 +577,32 @@ only screen and (min-resolution: 2dppx) {
 /**-----------Section3------------ */
 
 .doing-bloc{
+    display: none;
     padding-bottom: 120px;
 }
 
-.parts-title {
-    color: var(--dark-brand-color);
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
-    letter-spacing: 0.72px;
-    text-transform: capitalize;
-    text-align: center;
-    margin-bottom: 72px;
-}
-
-.doing-list{
-    display: flex;
-    gap: 24px;
-}
-
-.doing-items{
-    flex-basis: calc((100% - 3 * 16px) / 3);
+@media screen and (min-width:1158px){
+    .doing-bloc{
+        display: block;
+        padding-bottom: 120px;
+    }
+    .parts-title {
+        color: var(--dark-brand-color);
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 72px;
+    }
+    .doing-list{
+        display: flex;
+        gap: 24px;
+    }
+    .doing-items{
+        flex-basis: calc((100% - 3 * 16px) / 3);
+    }
 }
 
 /**-----------Section4------------ */
