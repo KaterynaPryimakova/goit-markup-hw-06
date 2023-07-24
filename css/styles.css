@@ -446,7 +446,6 @@ only screen and (min-resolution: 2dppx) {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-
 .button-title:hover,
 .button-title:focus {
     background-color: var(--active-color);
@@ -458,7 +457,6 @@ only screen and (min-resolution: 2dppx) {
         letter-spacing: 0.0002em;
         max-width: 496px;
     }
-
 }
 
 @media screen and (min-width:1158px) {
@@ -466,28 +464,21 @@ only screen and (min-resolution: 2dppx) {
         padding-top: 188px;
         padding-bottom: 188px;
     }
-
 }
+
 /**------------Section2-----------*/
 
 .values-bloc{
     padding-top: 96px;
     padding-bottom: 96px;
 }
-
 .values-list{
     display: flex;
     flex-direction: column;
     gap: 72px;
 }
-/* 
-.values-items{
-    flex-basis: calc((100% - 3 * 24px) / 4);
-} */
-
 .values-icon-wrap{
     display: none;
-    /* display: flex; */
     background-color: var(--light-brand-color);
     justify-content: center;
     align-items: center;
@@ -495,7 +486,6 @@ only screen and (min-resolution: 2dppx) {
     margin-bottom: 8px;
     border-radius: 4px;
 }
-
 .sub-title {
     color: var(--dark-brand-color);
     font-size: 20px;
@@ -503,7 +493,6 @@ only screen and (min-resolution: 2dppx) {
     line-height: 1.2;
     letter-spacing: 0.4px;
 }
-
 .values-title{
     font-size: 36px;
     font-weight: 700;
@@ -574,6 +563,7 @@ only screen and (min-resolution: 2dppx) {
         letter-spacing: 0.02em;
     }
 }
+
 /**-----------Section3------------ */
 
 .doing-bloc{
@@ -591,7 +581,7 @@ only screen and (min-resolution: 2dppx) {
         font-size: 36px;
         font-weight: 700;
         line-height: 1.11;
-        letter-spacing: 0.72px;
+        letter-spacing: 0.02em;
         text-transform: capitalize;
         text-align: center;
         margin-bottom: 72px;
@@ -605,27 +595,34 @@ only screen and (min-resolution: 2dppx) {
     }
 }
 
-/**-----------Section4------------ */
+/**-----------------Section4------------ */
 .team-bloc {
     background-color: var(--light-brand-color);
-    padding: 120px 0;
+    padding: 96px 0;
 }
-
+.team-title {
+    color: var(--dark-brand-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 72px;
+}
 .team-list{
     display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    margin-top: 72px;
-    margin-right: auto;
-    margin-left: auto;
-    align-content: center;
+    flex-direction: column;
+    gap: 72px;
+    justify-content: center;
+    align-items: center;
 }
 
 .team-card {
     background-color: var(--white);
-    width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    max-width: 264px;
 }
 
 .team-card-content{
@@ -669,15 +666,55 @@ only screen and (min-resolution: 2dppx) {
     height: 16px;
 }
 
+@media screen and (min-width:768px){
+    .team-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 64px 24px;
+        column-gap: 64px;
+    }
+    .team-card {
+        width: calc(50% - 24px);
+    }
+}
+
+@media screen and (min-width:1158px){
+    .team-bloc {
+        padding: 120px 0;
+    }
+    .team-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-top: 72px;
+        margin-right: auto;
+        margin-left: auto;
+        align-content: center;
+    }
+    .team-card {
+        width: calc((100% - 72px) / 4);
+    }
+}
+
 /**--------------Section5----------**/
 
 .customers-bloc{
-    padding: 120px 0;
+    padding: 96px 0;
 }
-
+.customers-title {
+    color: var(--dark-brand-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 72px;
+}
 .customers-list{
     display: flex;
-    gap: 24px;
+    gap: 72px 16px;
     justify-content: center;
 }
 .customers-item{
@@ -702,6 +739,25 @@ only screen and (min-resolution: 2dppx) {
 .customers-link:is(:hover, :focus) {
     color: var(--active-color);
     border-color: var(--active-color);
+}
+
+@media screen and (min-width:768px){
+
+}
+
+@media screen and (min-width:1158px){
+    .customers-bloc{
+        padding: 120px 0;
+    }
+    .customers-list{
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+    }
+    .customers-item{
+        width: calc((100% - 5*24px) / 6);
+        height: 88px;
+    }
 }
 
 /* *---------------Footer--------- */
