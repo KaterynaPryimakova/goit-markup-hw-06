@@ -780,10 +780,11 @@ only screen and (min-resolution: 2dppx) {
     /* margin-right: 120px; */
 }
 .lower-bloc .logo-main {
-    display: inline-block;
+    /* display: inline-block; */
     padding: 0;
     margin-bottom: 16px;
     margin-right: 0;
+    text-align: center;
 }
 
 .lower-text {
@@ -834,9 +835,7 @@ only screen and (min-resolution: 2dppx) {
 .footer-social-link:focus{
     background-color: var(--success);
 }
-.footer-form-wrap{
-    
-}
+
 .footer-subcribe-form{
     /* display: flex;
     justify-content: center;
@@ -910,11 +909,41 @@ only screen and (min-resolution: 2dppx) {
 }
 .btn-icon{
     fill:currentColor;
-    margin-left: 16px;
+    /* margin-left: 16px; */
 }
 .subscribe-btn:is(:hover, :focus) {
     background-color: var(--active-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width:768px){
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        align-items: baseline;
+    }
+    .lower-bloc .logo-main {
+        display: inline-block;
+    }
+    .footer-title{
+        text-align: start;
+    }
+    .subscribe-title{
+        text-align: start;
+    }
+    .footer-subcribe-form{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+    .footer-form-wrap{
+        max-width: 496px;
+        align-self: start;
+    }
+    .email-input{
+        min-width: 264px;
+    }
 }
 
 /**----------Portfolio*------------*/
