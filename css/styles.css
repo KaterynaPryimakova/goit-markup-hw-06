@@ -763,13 +763,15 @@ only screen and (min-resolution: 2dppx) {
 .lower-bloc {
     background-color: var(--dark-brand-color);
     /* padding: 100px 0;  */
-    padding: 96px 0;
+    padding-top: 97px;
+    padding-bottom: 96px;
 }
 .footer-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 72px;
 
     /* justify-content: flex-start;
     align-items: baseline; */
@@ -780,14 +782,14 @@ only screen and (min-resolution: 2dppx) {
 .lower-bloc .logo-main {
     display: inline-block;
     padding: 0;
-    /* margin-bottom: 16px; */
+    margin-bottom: 16px;
     margin-right: 0;
 }
 
 .lower-text {
     color: var(--light-brand-color);
     font-weight: normal;
-    max-width: 264px;
+    max-width: 268px;
 }
 
 .logo-accent-lower {
@@ -802,7 +804,8 @@ only screen and (min-resolution: 2dppx) {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    /* margin-bottom: 16px; */
+    margin-bottom: 16px;
+    text-align: center;
 }
 .footer-list{
     display: flex;
@@ -831,7 +834,9 @@ only screen and (min-resolution: 2dppx) {
 .footer-social-link:focus{
     background-color: var(--success);
 }
-
+.footer-form-wrap{
+    
+}
 .footer-subcribe-form{
     /* display: flex;
     justify-content: center;
@@ -841,7 +846,7 @@ only screen and (min-resolution: 2dppx) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 16px;
 }
 .subscribe-title{
     color: var(--white);
@@ -850,9 +855,11 @@ only screen and (min-resolution: 2dppx) {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+    text-align: center;
 }
+
 .email-input{
-    width: 264px;
+    min-width: 398px;
     height: 40px;
     font-size: 12px;
     line-height: 1.5;
@@ -861,6 +868,7 @@ only screen and (min-resolution: 2dppx) {
     background-color: transparent;
     border-radius: 4px;
     border: 1px solid var(--white);
+    opacity: 0.3;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     padding-left: 16px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
