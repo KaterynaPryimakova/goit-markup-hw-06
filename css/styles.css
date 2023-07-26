@@ -417,7 +417,9 @@ input {
     background-size: cover;
 }
 
-@media (min-resolution: 192dpi){
+@media (min-device-pixel-ratio:2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .title-bloc{
     background-image: linear-gradient(
         to bottom,
@@ -478,7 +480,9 @@ input {
             rgba(46, 47, 66, 0.70)
             ), url(../images/tablet-bg.jpg);
     }
-    @media (min-resolution: 192dpi){
+    @media (min-device-pixel-ratio:2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
         .title-bloc{
         background-image: linear-gradient(
             to bottom,
@@ -499,7 +503,9 @@ input {
             rgba(46, 47, 66, 0.70)
             ), url(../images/desktop-bg.jpg);
     }
-    @media (min-resolution: 192dpi){
+    @media (min-device-pixel-ratio:2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
         .title-bloc{
         background-image: linear-gradient(
             to bottom,
