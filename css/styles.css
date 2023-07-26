@@ -200,7 +200,7 @@ input {
     position: fixed;
     top: 0;
     left: 0;
-    min-width: 100%;
+    width: 100%;
     height: 100%;
     background: var(--white);
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
@@ -308,6 +308,7 @@ input {
     width: 100%;
     height: 100%;
     background-color: var(--acent-brand-color);
+    color: var(--white);
     color: var(--light-brand-color);
     border-radius: 50%;
     border: none;
@@ -318,6 +319,9 @@ input {
 }
 .mob-social-link:is(:hover, :focus) {
     background-color: var(--active-color);
+}
+.mob-social-icon{
+    fill: currentColor;
 }
 
 /**--------------------Tablet Header-------------- */
@@ -1107,7 +1111,7 @@ max-width: fit-content;
     background-color: var(--modal-background);
     border-radius: 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-    width: 408px;
+    width: 392px;
     min-height: 584px;
     position: absolute;
     top: 50%;
@@ -1148,16 +1152,14 @@ max-width: fit-content;
     fill: var(--white);
 }
 
-/* *----------Modal form subscribe--------- */
 .modal-form-callback{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 }
 .modal-form-callback:focus-within{
     border-color: var(--acent-brand-color);
 }
 .form-title{
-    width: 360px;
     color: var(--dark-brand-color);
     text-align: center;
     font-size: 16px;
@@ -1165,6 +1167,7 @@ max-width: fit-content;
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+    max-width: 360px;
 }
 .callback-label{
     color: var(--subtle-text);
@@ -1174,6 +1177,7 @@ max-width: fit-content;
     letter-spacing: 0.04em;
     display: block;
     margin-bottom: 4px;
+    width: 100%;
 }
 .input-icon-wrap{
     position: relative;
@@ -1313,4 +1317,7 @@ max-width: fit-content;
     border: none;
     fill: var(--light-brand-color);
     visibility: visible;
+}
+@media screen and (max-width:320px){
+
 }
