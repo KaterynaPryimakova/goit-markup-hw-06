@@ -1153,10 +1153,6 @@ max-width: fit-content;
     fill: var(--white);
 }
 
-.modal-form-callback{
-    /* display: flex;
-    flex-direction: column; */
-}
 .modal-form-callback:focus-within{
     border-color: var(--acent-brand-color);
 }
