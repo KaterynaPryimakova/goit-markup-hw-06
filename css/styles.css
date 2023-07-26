@@ -934,13 +934,16 @@ only screen and (min-resolution: 2dppx) {
     .footer-subcribe-form{
         display: flex;
         flex-direction: row;
+        justify-content: start;
         gap: 24px;
     }
     .footer-form-wrap{
         max-width: 496px;
         align-self: start;
     }
-    
+    .footer-form-label{
+        width: 264px;
+    }
     .email-input{
         width: 264px;
     }
