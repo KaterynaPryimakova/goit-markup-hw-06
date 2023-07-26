@@ -899,13 +899,11 @@ only screen and (min-resolution: 2dppx) {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    /* align-self: end; */
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-icon{
     fill:currentColor;
-    /* margin-left: 16px; */
 }
 .subscribe-btn:is(:hover, :focus) {
     background-color: var(--active-color);
@@ -971,8 +969,11 @@ only screen and (min-resolution: 2dppx) {
 .footer-title{
     text-align: left;
 }
+.footer-link-wrap{
+    margin-right: auto;
+}
 .footer-form-wrap {
-margin-left: auto;
+max-width: fit-content;
 }
 .footer-subcribe-form{
     display: flex;
@@ -988,10 +989,6 @@ margin-left: auto;
 .email-input{
     opacity: 1;
 }
-.btn-icon{
-    margin-left: 16px;
-}
-
 }
 
 /**----------Portfolio*------------*/
