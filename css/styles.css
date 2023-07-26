@@ -212,9 +212,8 @@ input {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: 0;
     padding: 80px 35px 40px 40px;
-    max-width: 428px;
+    width: 100%;
     height: 100%;
 }
 .mobile-navigation{
@@ -297,7 +296,8 @@ input {
 }
 .mob-social-list{
     display: flex;
-    gap: 56px;
+    gap: 13%;
+    width: 100%;
     
 }
 .mob-social-item{
@@ -323,6 +323,7 @@ input {
 .mob-social-icon{
     fill: currentColor;
 }
+
 
 /**--------------------Tablet Header-------------- */
 
@@ -1295,6 +1296,7 @@ max-width: fit-content;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--subtle-text);
+    width: 100%;
 }
 
 .checkbox-wrap{
