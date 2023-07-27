@@ -563,7 +563,7 @@ input {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 72px 24px;
         justify-content: space-around;
     }
     .values-items{
@@ -718,7 +718,6 @@ input {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 64px 24px;
-        column-gap: 64px;
     }
     .team-card {
         width: calc(50% - 24px);
@@ -791,6 +790,9 @@ input {
     .customers-bloc{
         padding-right: 93px;
         padding-left: 93px;
+    }
+    .customers-list{
+        gap: 72px 24px;
     }
     .customers-item{
         width: calc((100% - 48px) / 3);
@@ -1369,5 +1371,6 @@ max-width: fit-content;
 @media screen and (min-width:768px){
     .modal-content{
         width: 408px;
+        padding: 72px 24px 24px;
     }
 }
